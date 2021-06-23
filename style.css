@@ -1,0 +1,95 @@
+body{
+    width:100%;
+    max-width: 1200px;
+    min-width: 300px;
+    padding: 0 5% 100px 5%;
+    margin: 0 auto;
+}
+
+h2{
+    border-bottom: 3px solid lightgray;
+}
+
+header{
+    /*width: 100%;*/
+    margin-bottom: 50px;
+    /*background-color: crimson;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header .profi{
+    color: darkslategrey;
+
+}
+
+header img{
+    width: 200px;
+    margin-right: 40px;
+}
+header h1{
+    display: inline-block;
+}
+
+aside{
+    /*min-width: 240px;*/
+    width: 37%;
+    float: left;
+    padding-right: 3%;
+    font-size: 20px;
+}
+
+main{
+    width:60%;
+    float: right;
+    font-size: 20px;
+}
+.subItem{
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.contactItem{
+    height: 30px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.contactItem div {
+   font-size: 20px;
+
+}
+.contactItem img{
+    height: 100%;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+h3{
+    padding: 0;
+    margin: 0;
+}
+
+.proSkillsBlock div{
+    font-size: 18px
+}
+
+data{
+    color: dimgrey;
+}
+footer{
+    width: 100%;
+    clear: both;
+    text-align: center;
+    /*background-color: whitesmoke;*/
+    padding: 25px 0;
+    font-size: 20px;
+    font-weight: 700;
+    vertical-align: bottom;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<input type="button" value="Print" onclick=printIt()>
+<header>
+    <img src='./img/my%20photo.jpg' alt="my photo">
+    <div>
+        <h1>STANISLAV ZEBEK</h1>
+        <div class="profi">FRONTEND DEVELOPER</div>
+    </div>
+
+
+</header>
+<aside>
+    <div>
+        <h2>OVERVIEW</h2>
+        <div>
+            <p>Hello! My name is Stanislav. I want to become a Frontend developer.</p>
+            <p>From 2014 to 2021 I worked as an engineer in the field of telecommunications technology. While in this position, my areas of interest consisted of: microwave measurements; control of parameters of radio engineering and telecommunication systems; spectrometric signal processing. I had experience in programming in C/C++. Also I worked in such mathematical software packages MatLab and Mathcad.
+                In addition, from 2016 to 2020, I was engaged in teaching activities in the following subjects: "Digital Signal Processing", "Digital Television", "Signals and Processes in Telecommunication Systems". During his time at the university, he took part in scientific conferences and published more than 20 scientific papers. </p>
+            <p>Three years ago I started to get involved in web development purely out of interest. At first, I mastered back-end development in PHP at a basic level, then I began to study front-end development in parallel and realized that this is exactly the direction where I want to develop.</p>
+        </div>
+    </div>
+    <div>
+        <h2>CONTACTS</h2>
+        <div class="contactItem"><img src='./img/tel.png' alt="my phone number">
+            <div>+7-978-861-24-20</div>
+        </div>
+        <div class="contactItem"><img src='./img/mail.png' alt="my email">
+            <div>stanislavzebek@gmail.com</div>
+        </div>
+        <div class="contactItem"><img src='./img/web.png' alt="my web">
+            <div>https://github.com/prostostasyan</div>
+        </div>
+        <div class="contactItem"><img src='./img/map%20(2).png'  alt="my address">
+            <div>Sevastopol, 299053, Russia</div>
+        </div>
+    </div>
+    <div class="proSkillsBlock">
+        <h2>PRO SKILLS</h2>
+        <div>— HTML, CSS, Sass, styled-components;</div>
+        <div>— JavaScript, JQuery, React, Redux, React-Redux;</div>
+        <div>— NPM, Yarn, Git;</div>
+        <div>— NPM, Yarn, Git;</div>
+        <div>— at the entry level PHP и MySQL</div>
+        <div>— at the entry level Adobe Photoshop.</div>
+    </div>
+
+    <div>
+        <h2>REFERENCES</h2>
+        <div>
+            Tortor at auctor urna nunc id cursus metus.
+            Pellentesque nec nam aliquam sem et tortor consequat id porta.
+            Condimentum lacinia quis vel eros donec ac.
+        </div>
+        <div>
+            Tortor at auctor urna nunc id cursus metus.
+            Pellentesque nec nam aliquam sem et tortor consequat id porta.
+            Condimentum lacinia quis vel eros donec ac.
+        </div>
+
+    </div>
+</aside>
+<main>
+    <article>
+        <h2>WORD EXPERIENCE</h2>
+        <div>
+            <div class="subItem"><h3>Radio engineer</h3>
+                <time> 2014-2021</time>
+            </div>
+            <div>Sevastopol National Technical University</div>
+            <div>Engineering center for micro- and nanoelectronics products </div>
+            <ul>
+                <li>Developed the algorithms determine the integrated parameter microwave devices based on the quadrature measurement method </li>
+                <li>Developed the principles of building a radio frequency identification system with object localization </li>
+                <li>The mathematical Model of a Complex Reflection Coefficient
+                    Measuring Instrument based on a Method of direct Frequency Conversion</li>
+                <li>Developed meters of complex parameters based on direct frequency conversion methods </li>
+                <li>Participated in the development of an integrated circuit
+                    microwave frequency range for AESA silicon-based beamforming modules </li>
+            </ul>
+        </div>
+        <div>
+            <div class="subItem"><h3>Teaching assistant </h3>
+                <time> 2016-2020</time>
+            </div>
+            <div>Sevastopol National Technical University</div>
+            <div>
+                <p>Taught the following disciplines : </p>
+                <ul>
+                    <li>Digital Signal Processing</li>
+                    <li>Digital Signal Processing </li>
+                    <li>Signals and Processes in Telecommunication Systems</li>
+                    <li>Network analysis (electrical circuits) </li>
+                </ul>
+            </div>
+        </div>
+    </article>
+    <article>
+        <h2>EDUCATION</h2>
+        <div>
+            <div>
+                <div class="subItem">
+                    <h3>Bachelor of Radio Engineering, Engineer</h3>
+                    <time> 2009-2013</time>
+                </div>
+                <div>Sevastopol National Technical University</div>
+            </div>
+<!--            <p>-->
+<!--                Tortor at auctor urna nunc id cursus metus.-->
+<!--                Pellentesque nec nam aliquam sem et tortor consequat id porta.-->
+<!--                Condimentum lacinia quis vel eros donec ac.-->
+<!--            </p>-->
+        </div>
+        <div>
+            <div>
+                <div class="subItem">
+                    <h3>Master of Radio Engineering</h3>
+                    <time> 2013-2014</time>
+                </div>
+                <div>Sevastopol State University </div>
+            </div>
+<!--            <p>-->
+<!--                Tortor at auctor urna nunc id cursus metus.-->
+<!--                Pellentesque nec nam aliquam sem et tortor consequat id porta.-->
+<!--                Condimentum lacinia quis vel eros donec ac.-->
+<!--            </p>-->
+        </div>
+
+
+
+    </article>
+</main>
+<footer>
+    <div> Sevastopol</div>
+    <div> 2021</div>
+</footer>
+
+
+<script>
+    function printIt() {
+        let wnd = window.open('http://your-pdf-url');
+        wnd.print();
+    }
+</script>
+</body>
+</html>
