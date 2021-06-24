@@ -17,7 +17,9 @@
 
         var params = {
             key: api_key,
-            url: url
+            url: url,
+            page_size:  'A4',
+            web_page_width: '1200px'
         }
 
         var xhr = new XMLHttpRequest();
@@ -27,9 +29,8 @@
         xhr.responseType = 'arraybuffer';
 
         xhr.onload = function (e) {
-            if (this.status == 200) {
+            if (this.status === 200) {
                 //console.log('Conversion to PDF completed ok.');
-
                 var blob = new Blob([this.response], { type: 'application/pdf' });
                 var url = window.URL || window.webkitURL;
                 var fileURL = url.createObjectURL(blob);
@@ -37,7 +38,7 @@
 
                 //console.log('File url: ' + fileURL);
 
-                var fileName = "Document.pdf";
+                var fileName = "CV_ZebekSE.pdf";
 
                 if (navigator.appVersion.toString().indexOf('.NET') > 0) {
                     // This is for IE browsers, as the alternative does not work
