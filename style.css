@@ -1,18 +1,16 @@
-body{
-    width:100%;
+body {
+    width: 100%;
     max-width: 1200px;
     min-width: 300px;
     padding: 0 5% 30px 5%;
     margin: 0 auto;
 }
 
-h2{
+h2 {
     border-bottom: 3px solid lightgray;
 }
 
-
-
-header{
+header {
     /*width: 100%;*/
     margin-bottom: 30px;
     /*background-color: crimson;*/
@@ -22,22 +20,23 @@ header{
     align-items: center;
 }
 
-header .profi{
+header .profi {
     color: darkslategrey;
 
 }
 
-header img{
+header img {
     width: 200px;
     margin-right: 40px;
 }
-header h1{
+
+header h1 {
     display: inline-block;
 }
 
-header .download{
+header .download {
     align-self: flex-start;
-    /*justify-self: flex-end;*/
+    justify-self: flex-end;
     margin-left: 50%;
     width: 10%;
     padding: 0;
@@ -47,19 +46,19 @@ header .download{
 
 }
 
-.download p{
+.download p {
     margin: 0;
     padding: 0;
 }
 
-.download img{
+.download img {
     width: 100%;
     margin: 0;
     padding: 0;
 }
 
 
-aside{
+aside {
     /*min-width: 240px;*/
     width: 37%;
     float: left;
@@ -67,18 +66,20 @@ aside{
     font-size: 20px;
 }
 
-main{
-    width:60%;
+main {
+    width: 60%;
     float: right;
     font-size: 20px;
 }
-.subItem{
+
+.subItem {
     margin-top: 20px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
-.contactItem{
+
+.contactItem {
     height: 30px;
     margin: 20px 0;
     display: flex;
@@ -87,29 +88,32 @@ main{
     align-items: center;
 
 }
+
 .contactItem div {
-   font-size: 20px;
+    font-size: 20px;
 
 }
-.contactItem img{
+
+.contactItem img {
     height: 100%;
     display: inline-block;
     margin-right: 25px;
 }
 
-h3{
+h3 {
     padding: 0;
     margin: 0;
 }
 
-.proSkillsBlock div{
+.proSkillsBlock div {
     font-size: 18px
 }
 
-data{
+data {
     color: dimgrey;
 }
-footer{
+
+footer {
     width: 100%;
     clear: both;
     text-align: center;
