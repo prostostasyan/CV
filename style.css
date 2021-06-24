@@ -2,7 +2,7 @@ body{
     width:100%;
     max-width: 1200px;
     min-width: 300px;
-    padding: 0 5% 100px 5%;
+    padding: 0 5% 30px 5%;
     margin: 0 auto;
 }
 
@@ -10,9 +10,11 @@ h2{
     border-bottom: 3px solid lightgray;
 }
 
+
+
 header{
     /*width: 100%;*/
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     /*background-color: crimson;*/
     display: flex;
     flex-direction: row;
@@ -32,6 +34,30 @@ header img{
 header h1{
     display: inline-block;
 }
+
+header .download{
+    align-self: flex-start;
+    /*justify-self: flex-end;*/
+    margin-left: 50%;
+    width: 10%;
+    padding: 0;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+
+}
+
+.download p{
+    margin: 0;
+    padding: 0;
+}
+
+.download img{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 
 aside{
     /*min-width: 240px;*/
