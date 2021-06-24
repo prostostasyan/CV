@@ -10,35 +10,35 @@
 
 <script>
     function SaveAsPdf() {
-        var api_endpoint = "https://selectpdf.com/api2/convert/";
-        var api_key = "c5801d0e-c696-41f3-9285-d074507915df";
+        const api_endpoint = "https://selectpdf.com/api2/convert/";
+        const api_key = "c5801d0e-c696-41f3-9285-d074507915df";
 
-        var url = window.location.href; // current page
+        const url = window.location.href; // current page
 
-        var params = {
+        const params = {
             key: api_key,
             url: url,
             page_size:  'A4',
             web_page_width: '1200px'
         }
 
-        var xhr = new XMLHttpRequest();
+        const xhr = new XMLHttpRequest();
         xhr.open('POST', api_endpoint, true);
         xhr.setRequestHeader("Content-Type", "application/json");
 
         xhr.responseType = 'arraybuffer';
 
-        xhr.onload = function (e) {
+        xhr.onload = function () {
             if (this.status === 200) {
                 //console.log('Conversion to PDF completed ok.');
-                var blob = new Blob([this.response], { type: 'application/pdf' });
-                var url = window.URL || window.webkitURL;
-                var fileURL = url.createObjectURL(blob);
+                const blob = new Blob([this.response], { type: 'application/pdf' });
+                const url = window.URL || window.webkitURL;
+                const fileURL = url.createObjectURL(blob);
                 //window.location.href = fileURL;
 
                 //console.log('File url: ' + fileURL);
 
-                var fileName = "CV_ZebekSE.pdf";
+                const fileName = "CV_ZebekSE.pdf";
 
                 if (navigator.appVersion.toString().indexOf('.NET') > 0) {
                     // This is for IE browsers, as the alternative does not work
@@ -46,7 +46,7 @@
                 }
                 else {
                     // This is for Chrome, Firefox, etc.
-                    var a = document.createElement("a");
+                    const a = document.createElement("a");
                     document.body.appendChild(a);
                     a.style = "display: none";
                     a.href = fileURL;
