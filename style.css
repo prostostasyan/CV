@@ -1,4 +1,4 @@
-html, body{
+html, body {
     padding: 0;
     font-size: 16px;
     width: 96%;
@@ -9,7 +9,6 @@ html, body{
 body > * {
     box-sizing: border-box;
 }
-
 
 h2 {
     border-bottom: 3px solid lightgray;
@@ -25,7 +24,7 @@ header {
     align-items: stretch;
 }
 
-header .Iam{
+header .Iam {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -43,9 +42,9 @@ header .myPhoto {
     margin-right: 5%;
 }
 
-header .myName{
+header .myName {
     display: inline-block;
-    width:15%;
+    width: 15%;
     align-self: flex-end;
 }
 
@@ -54,7 +53,7 @@ header h1 {
     font-size: 20px;
 }
 
-header .downloadContainer{
+header .downloadContainer {
     width: 35%;
     position: relative;
     display: flex;
@@ -75,11 +74,11 @@ header .download {
 header .download img {
     width: 100%;
 }
+
 header .download div {
     font-weight: 700;
     text-align: center;
     width: 100%;
-
 }
 
 .infoContainer {
@@ -88,10 +87,10 @@ header .download div {
     justify-content: center;
     align-items: stretch;
     width: 100%;
-    word-wrap: break-word; /* old name */
+    word-wrap: break-word;
     overflow-wrap: break-word;
-    /*background-color: darkslategrey;*/
 }
+
 aside {
     font-family: monospace;
     width: 100%;
@@ -104,28 +103,30 @@ main {
     font-size: 16px;
 }
 
-@media (min-width: 800px) {
-        body{
-            width: 93%;
-            padding: 0 2% 30px 2%;
-        }
+@media (min-width: 768px) {
+    body {
+        width: 80%;
+        padding: 0 2% 30px 2%;
+    }
 
-    header{
+    header {
         width: 100%;
     }
-    header .myName{
+
+    header .myName {
         display: inline-block;
-        /*width:25%;*/
         align-self: center;
     }
-    header .myPhoto{
+
+    header .myPhoto {
         min-width: 250px;
     }
-    header h1{
+
+    header h1 {
         font-size: 30px;
     }
 
-    .infoContainer{
+    .infoContainer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -193,7 +194,6 @@ footer {
     width: 100%;
     clear: both;
     text-align: center;
-    /*background-color: whitesmoke;*/
     padding: 25px 0;
     font-size: 20px;
     font-weight: 700;
