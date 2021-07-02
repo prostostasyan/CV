@@ -1,74 +1,150 @@
-body {
-    width: 100%;
-    max-width: 1200px;
+html, body{
+    padding: 0;
+    font-size: 16px;
+    width: 96%;
     min-width: 300px;
-    padding: 0 5% 30px 5%;
     margin: 0 auto;
 }
 
+body > * {
+    box-sizing: border-box;
+}
+
+
 h2 {
     border-bottom: 3px solid lightgray;
+    font-family: Arial, monospace;
 }
 
 header {
-    /*width: 100%;*/
+    width: 100%;
     margin-bottom: 30px;
-    /*background-color: crimson;*/
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+header .Iam{
+    display: flex;
+    flex-direction: row;
     align-items: center;
+    width: 30%;
 }
 
 header .profi {
     color: darkslategrey;
-
 }
 
-header img {
-    width: 200px;
-    margin-right: 40px;
+header .myPhoto {
+    display: inline-block;
+    width: 35%;
+    min-width: 150px;
+    margin-right: 5%;
+}
+
+header .myName{
+    display: inline-block;
+    width:15%;
+    align-self: flex-end;
 }
 
 header h1 {
     display: inline-block;
+    font-size: 20px;
+}
+
+header .downloadContainer{
+    width: 35%;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 header .download {
-    align-self: flex-start;
-    justify-self: flex-end;
-    margin-left: 50%;
     width: 10%;
-    padding: 0;
-    text-align: center;
-    font-size: 15px;
-    font-weight: 700;
-    border: none;
-    outline: none;
-    cursor: pointer;
-
+    min-width: 60px;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 
-.download img {
+header .download img {
     width: 100%;
-    margin: 0;
-    padding: 0;
+}
+header .download div {
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+
 }
 
-
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    word-wrap: break-word; /* old name */
+    overflow-wrap: break-word;
+    /*background-color: darkslategrey;*/
+}
 aside {
-    /*min-width: 240px;*/
-    width: 37%;
-    float: left;
-    padding-right: 3%;
-    font-size: 20px;
+    font-family: monospace;
+    width: 100%;
+    font-size: 16px;
 }
 
 main {
-    width: 60%;
-    float: right;
-    font-size: 20px;
+    font-family: monospace;
+    width: 100%;
+    font-size: 16px;
+}
+
+@media (min-width: 800px) {
+        body{
+            width: 93%;
+            padding: 0 2% 30px 2%;
+        }
+
+    header{
+        width: 100%;
+    }
+    header .myName{
+        display: inline-block;
+        /*width:25%;*/
+        align-self: center;
+    }
+    header .myPhoto{
+        min-width: 250px;
+    }
+    header h1{
+        font-size: 30px;
+    }
+
+    .infoContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    aside {
+
+        font-family: monospace;
+        width: 47%;
+        font-size: 16px;
+    }
+
+    main {
+        font-family: monospace;
+        width: 47%;
+        font-size: 16px;
+    }
+
 }
 
 .subItem {
@@ -79,6 +155,7 @@ main {
 }
 
 .contactItem {
+    font-family: monospace;
     height: 30px;
     margin: 20px 0;
     display: flex;
@@ -89,7 +166,7 @@ main {
 }
 
 .contactItem div {
-    font-size: 20px;
+    font-size: 16px;
 
 }
 
@@ -105,7 +182,7 @@ h3 {
 }
 
 .proSkillsBlock div {
-    font-size: 18px
+    font-size: 16px
 }
 
 data {

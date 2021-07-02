@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1">
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="script.js"></script>
@@ -10,149 +10,204 @@
 
 <body>
 <header class="head">
-    <img src='./img/my%20photo.jpg' alt="my photo">
-    <div>
-        <h1>STANISLAV ZEBEK</h1>
-        <div class="profi">FRONTEND DEVELOPER</div>
+    <div class="Iam">
+        <img class="myPhoto" src='./img/my%20photo.jpg' alt="my photo">
+        <div class="myName">
+            <h1>STANISLAV ZEBEK</h1>
+            <div class="profi">FRONTEND DEVELOPER</div>
+        </div>
     </div>
-    <button class="download" onclick='SaveAsPdf()'><img src="img/pdf.png" alt="pdf">
-        Download PDF</button>
+    <div class="downloadContainer">
+        <div class="download" onclick='SaveAsPdf()'>
+            <img src="img/pdf.png" alt="pdf">
+            <div>Download PDF</div>
+        </div>
+    </div>
+
 </header>
-
-<aside>
-    <div>
-        <h2>OVERVIEW</h2>
+<div class="infoContainer">
+    <aside>
         <div>
-            <p>Hello! My name is Stanislav. I want to become a Frontend developer.</p>
-            <p>From 2014 to 2021 I worked as an engineer in the field of telecommunications technology. While in this
-                position, my areas of interest consisted of: microwave measurements; control of parameters of radio
-                engineering and telecommunication systems; spectrometric signal processing. I had experience in
-                programming in C/C++. Also I worked in such mathematical software packages MatLab and Mathcad.
-                In addition, from 2016 to 2020, I was engaged in teaching activities in the following subjects: "Digital
-                Signal Processing", "Digital Television", "Signals and Processes in Telecommunication Systems". During
-                his time at the university, he took part in scientific conferences and published more than 20 scientific
-                papers. </p>
-            <p>Three years ago I started to get involved in web development purely out of interest. At first, I mastered
-                back-end development in PHP at a basic level, then I began to study front-end development in parallel
-                and realized that this is exactly the direction where I want to develop.</p>
-        </div>
-    </div>
-    <div>
-        <h2>CONTACTS</h2>
-        <div class="contactItem"><img src='./img/tel.png' alt="my phone number">
-            <div>+7-978-861-24-20</div>
-        </div>
-        <div class="contactItem"><img src='./img/mail.png' alt="my email">
-            <div>stanislavzebek@gmail.com</div>
-        </div>
-        <div class="contactItem"><img src='./img/web.png' alt="my web">
-            <div>https://github.com/prostostasyan</div>
-        </div>
-        <div class="contactItem"><img src='./img/map%20(2).png' alt="my address">
-            <div>Sevastopol, 299053, Russia</div>
-        </div>
-    </div>
-    <div class="proSkillsBlock">
-        <h2>PRO SKILLS</h2>
-        <div>— HTML, CSS, Sass, styled-components;</div>
-        <div>— JavaScript, JQuery, React, Redux, React-Redux;</div>
-        <div>— NPM, Yarn, Git;</div>
-        <div>— NPM, Yarn, Git;</div>
-        <div>— at the entry level PHP и MySQL</div>
-        <div>— at the entry level Adobe Photoshop.</div>
-    </div>
-
-    <div>
-        <h2>REFERENCES</h2>
-        <div>
-            Tortor at auctor urna nunc id cursus metus.
-            Pellentesque nec nam aliquam sem et tortor consequat id porta.
-            Condimentum lacinia quis vel eros donec ac.
-        </div>
-        <div>
-            Tortor at auctor urna nunc id cursus metus.
-            Pellentesque nec nam aliquam sem et tortor consequat id porta.
-            Condimentum lacinia quis vel eros donec ac.
-        </div>
-
-    </div>
-</aside>
-<main>
-    <article>
-        <h2>WORD EXPERIENCE</h2>
-        <div>
-            <div class="subItem"><h3>Radio engineer</h3>
-                <time> 2014-2021</time>
-            </div>
-            <div>Sevastopol National Technical University</div>
-            <div>Engineering center for micro- and nanoelectronics products</div>
-            <ul>
-                <li>Developed the algorithms determine the integrated parameter microwave devices based on the
-                    quadrature measurement method
-                </li>
-                <li>Developed the principles of building a radio frequency identification system with object
-                    localization
-                </li>
-                <li>The mathematical Model of a Complex Reflection Coefficient
-                    Measuring Instrument based on a Method of direct Frequency Conversion
-                </li>
-                <li>Developed meters of complex parameters based on direct frequency conversion methods</li>
-                <li>Participated in the development of an integrated circuit
-                    microwave frequency range for AESA silicon-based beamforming modules
-                </li>
-            </ul>
-        </div>
-        <div>
-            <div class="subItem"><h3>Teaching assistant </h3>
-                <time> 2016-2020</time>
-            </div>
-            <div>Sevastopol National Technical University</div>
+            <h2>OVERVIEW</h2>
             <div>
-                <p>Taught the following disciplines : </p>
-                <ul>
-                    <li>Digital Signal Processing</li>
-                    <li>Digital Signal Processing</li>
-                    <li>Signals and Processes in Telecommunication Systems</li>
-                    <li>Network analysis (electrical circuits)</li>
-                </ul>
+                <p>Hello! My name is Stanislav. I want to become a Frontend developer.</p>
+                <p>From 2014 to 2021 I worked as an engineer in the field of telecommunications technology. While in
+                    this
+                    position, my areas of interest consisted of: microwave measurements; control of parameters of radio
+                    engineering and telecommunication systems; spectrometric signal processing. I had experience in
+                    programming in C/C++. Also I worked in such mathematical software packages MatLab and Mathcad.
+                    In addition, from 2016 to 2020, I was engaged in teaching activities in the following subjects:
+                    "Digital
+                    Signal Processing", "Digital Television", "Signals and Processes in Telecommunication Systems".
+                    During
+                    his time at the university, I took part in scientific conferences. </p>
+                <p>Three years ago I started to get involved in web development purely out of interest. At first, I
+                    mastered
+                    Back-end development in PHP at a basic level, then I began to study front-end development in
+                    parallel
+                    and realized that this is exactly the direction where I want to develop.</p>
             </div>
         </div>
-    </article>
-    <article>
-        <h2>EDUCATION</h2>
         <div>
+            <h2>CONTACTS</h2>
+            <div class="contactItem"><img src='./img/tel.png' alt="my phone number">
+                <div>+7-978-861-24-20</div>
+            </div>
+            <div class="contactItem"><img src='./img/mail.png' alt="my email">
+                <div>stanislavzebek@gmail.com</div>
+            </div>
+            <div class="contactItem"><img src='./img/web.png' alt="my web">
+                <div>github.com/prostostasyan</div>
+            </div>
+            <div class="contactItem"><img src='./img/map%20(2).png' alt="my address">
+                <div>Sevastopol, 299053, Russia</div>
+            </div>
+        </div>
+        <div class="proSkillsBlock">
+            <h2>PRO SKILLS</h2>
+            <div>— HTML, CSS, Sass, styled-components;</div>
+            <div>— JavaScript, JQuery, React, Redux, React-Redux;</div>
+            <div>— NPM, Yarn, Git;</div>
+            <div>— at the entry level PHP и MySQL</div>
+            <div>— at the entry level Adobe Photoshop.</div>
             <div>
-                <div class="subItem">
-                    <h3>Bachelor of Radio Engineering, Engineer</h3>
-                    <time> 2009-2013</time>
+                <p>I started my journey by studying layout, namely HTML and CSS. As a source of information, I used
+                    video tutorials from YouTube, as well as many Internet sites, in particular (code.mu/ru/), I also
+                    took assignments from there. My first application was the game "Cities", written using the PHP
+                    language, a randomizer was chosen as a rival, with the help of which the names of non-repeating
+                    cities were pulled from the database, for this I had to study MySQL in more depth. However, the
+                    application did not look very presentable and it lacked functionality and I realized that I needed
+                    to additionally know JavaScript (JS) well. </p>
+                <p>It was always easier for me to learn something by doing, and I started learning JS by creating a
+                    simple calculator. In the course of creating the Calculator, I discovered that I did not have enough
+                    knowledge and skills in order to satisfactorily cope with the task, so it was decided to take a
+                    basic paid course https://htmlacademy.ru/courses. In parallel with taking the courses, I studied the
+                    basics of JS using the tutorial https://learn.javascript.ru. </p>
+                <p>After passing HTMLACADEMY, I studied layout well, I also got experience using Sass, after which I
+                    started developing my calculator (https://github.com/prostostasyan/-Calculator), in the process of
+                    creating an application I learned well DOM operations using JS ... Special difficulties when
+                    creating a Calculator. Then I started developing standard practical mini-games in JS, such as
+                    "Fifteen" (https://github.com/prostostasyan/Simple-puzzle), "Find a Pair"
+                    (https://github.com/prostostasyan/Memory -game), where it was necessary to find two identical
+                    pictures from the first attempt, and when creating a new game, combinations of pictures and their
+                    arrangement were created randomly.</p>
+
+            </div>
+        </div>
+
+        <!--    <div>-->
+        <!--        <h2>REFERENCES</h2>-->
+        <!--        <div>-->
+        <!--            Tortor at auctor urna nunc id cursus metus.-->
+        <!--            Pellentesque nec nam aliquam sem et tortor consequat id porta.-->
+        <!--            Condimentum lacinia quis vel eros donec ac.-->
+        <!--        </div>-->
+        <!--        <div>-->
+        <!--            Tortor at auctor urna nunc id cursus metus.-->
+        <!--            Pellentesque nec nam aliquam sem et tortor consequat id porta.-->
+        <!--            Condimentum lacinia quis vel eros donec ac.-->
+        <!--        </div>-->
+        <!--    </div>-->
+
+    </aside>
+    <main>
+        <div class="proSkillsBlock">
+            <div>
+                <p>After that I made a movie search engine (https://github.com/prostostasyan/MovieSearch-with-API-)
+                    based on the API (https://api.themoviedb.org), during development I gained experience using Promise,
+                    in particular, I learned how to send requests and handle responses with Fetch. Next, I started
+                    exploring the React JavaScript library. I studied courses on YouTube
+                    (https://www.youtube.com/playlist?list=PLcvhF2Wqh7DNVy1OCUpG3i5lyxyBWhGZ8), while transferring my
+                    old projects to the new platform. The learning outcomes are stored in the Git repository
+                    https://github.com/prostostasyan/React-demo. During the course, I understood what class and
+                    functional components are and how to create them, understood what lifecycle methods are for, how and
+                    where to use them, studied and learned how to use Hooks, studied React-Redux.</p>
+                <p>Then I created an application (https://github.com/prostostasyan/fakeGismeteo), which showed the
+                    weather forecast through the API (http://api.openweathermap.org), where I first used the
+                    Styled-components library, and also connected a map to the application, on which the current
+                    location of the requested city is determined.</p>
+
+                <p>To learning it, React-Redux created an application "To Do List"
+                    (https://github.com/prostostasyan/toDoList-withServer-), which marks the list of completed tasks, in
+                    addition, for this application, I developed a server part based on json-server. </p>
+            </div>
+        </div>
+
+
+        <div>
+            <h2>WORK EXPERIENCE</h2>
+            <div>
+                <div class="subItem"><h3>Radio engineer</h3>
+                    <time> 2014-2021</time>
                 </div>
                 <div>Sevastopol National Technical University</div>
+                <div>Engineering center for micro- and nanoelectronics products</div>
+                <ul>
+                    <li>Developed the algorithms determine the integrated parameter microwave devices based on the
+                        quadrature measurement method
+                    </li>
+                    <li>Developed the principles of building a radio frequency identification system with object
+                        localization
+                    </li>
+                    <li>The mathematical Model of a Complex Reflection Coefficient
+                        Measuring Instrument based on a Method of direct Frequency Conversion
+                    </li>
+                    <li>Developed meters of complex parameters based on direct frequency conversion methods</li>
+                    <li>Participated in the development of an integrated circuit
+                        microwave frequency range for AESA silicon-based beamforming modules
+                    </li>
+                </ul>
             </div>
-            <!--            <p>-->
-            <!--                Tortor at auctor urna nunc id cursus metus.-->
-            <!--                Pellentesque nec nam aliquam sem et tortor consequat id porta.-->
-            <!--                Condimentum lacinia quis vel eros donec ac.-->
-            <!--            </p>-->
+            <div>
+                <div class="subItem"><h3>Teaching assistant </h3>
+                    <time> 2016-2020</time>
+                </div>
+                <div>Sevastopol National Technical University</div>
+                <div>
+                    <p>Taught the following disciplines : </p>
+                    <ul>
+                        <li>Digital Signal Processing</li>
+                        <li>Signals and Processes in Telecommunication Systems</li>
+                        <li>Network analysis (electrical circuits)</li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div>
+            <h2>EDUCATION</h2>
             <div>
-                <div class="subItem">
-                    <h3>Master of Radio Engineering</h3>
-                    <time> 2013-2014</time>
+                <div>
+                    <div class="subItem">
+                        <h3>Bachelor of Radio Engineering, Engineer</h3>
+                        <time> 2009-2013</time>
+                    </div>
+                    <div>Sevastopol National Technical University</div>
                 </div>
-                <div>Sevastopol State University</div>
+                <!--            <p>-->
+                <!--                Tortor at auctor urna nunc id cursus metus.-->
+                <!--                Pellentesque nec nam aliquam sem et tortor consequat id porta.-->
+                <!--                Condimentum lacinia quis vel eros donec ac.-->
+                <!--            </p>-->
             </div>
-            <!--            <p>-->
-            <!--                Tortor at auctor urna nunc id cursus metus.-->
-            <!--                Pellentesque nec nam aliquam sem et tortor consequat id porta.-->
-            <!--                Condimentum lacinia quis vel eros donec ac.-->
-            <!--            </p>-->
+            <div>
+                <div>
+                    <div class="subItem">
+                        <h3>Master of Radio Engineering</h3>
+                        <time> 2013-2014</time>
+                    </div>
+                    <div>Sevastopol State University</div>
+                </div>
+                <!--            <p>-->
+                <!--                Tortor at auctor urna nunc id cursus metus.-->
+                <!--                Pellentesque nec nam aliquam sem et tortor consequat id porta.-->
+                <!--                Condimentum lacinia quis vel eros donec ac.-->
+                <!--            </p>-->
+            </div>
+
+
         </div>
-
-
-    </article>
-</main>
-
+    </main>
+</div>
 <footer>
     <div> Sevastopol</div>
     <div> 2021</div>
