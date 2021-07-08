@@ -73,13 +73,14 @@ header .download {
 
 
 header .download img {
-    width: 100%;
+    width: 50%;
 }
 
 header .download div {
     font-weight: 700;
     text-align: center;
     width: 100%;
+    font-size: 10px;
 }
 
 .infoContainer {
@@ -195,6 +196,14 @@ footer {
 
     header h1 {
         font-size: 30px;
+    }
+
+    header .download img {
+        width: 100%;
+    }
+
+    header .download div{
+        font-size: 16px;
     }
 
     .infoContainer {
