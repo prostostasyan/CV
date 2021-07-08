@@ -91,6 +91,10 @@ header .download div {
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
+.infoContainer p {
+    text-indent: 1.5em;
+    text-align: justify;
+}
 
 aside {
     font-family: sans-serif monospace;
@@ -103,6 +107,72 @@ main {
     width: 100%;
     font-size: 16px;
 }
+
+
+
+.subItem {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.contactItem {
+    font-family: monospace;
+    height: 30px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.contactItem div {
+    font-size: 16px;
+
+}
+
+.contactItem img {
+    height: 100%;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.exp li{
+    margin: 10px 0;
+    text-align: justify;
+}
+ul{
+    /*text-indent: 1.5em;*/
+}
+
+
+
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.proSkillsBlock div {
+    font-size: 16px
+}
+
+data {
+    color: dimgrey;
+}
+
+footer {
+    width: 100%;
+    clear: both;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 20px;
+    font-weight: 700;
+    vertical-align: bottom;
+}
+
+
 
 @media (min-width: 768px) {
     body {
@@ -147,56 +217,4 @@ main {
         font-size: 16px;
     }
 
-}
-
-.subItem {
-    margin-top: 20px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.contactItem {
-    font-family: monospace;
-    height: 30px;
-    margin: 20px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-
-}
-
-.contactItem div {
-    font-size: 16px;
-
-}
-
-.contactItem img {
-    height: 100%;
-    display: inline-block;
-    margin-right: 25px;
-}
-
-h3 {
-    padding: 0;
-    margin: 0;
-}
-
-.proSkillsBlock div {
-    font-size: 16px
-}
-
-data {
-    color: dimgrey;
-}
-
-footer {
-    width: 100%;
-    clear: both;
-    text-align: center;
-    padding: 25px 0;
-    font-size: 20px;
-    font-weight: 700;
-    vertical-align: bottom;
 }
