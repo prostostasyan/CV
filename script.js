@@ -14,7 +14,6 @@ function SaveAsPdf() {
     const xhr = new XMLHttpRequest();
     xhr.open('POST', api_endpoint, true);
     xhr.setRequestHeader("Content-Type", "application/json");
-
     xhr.responseType = 'arraybuffer';
 
     xhr.onload = function () {

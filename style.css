@@ -173,6 +173,7 @@ footer {
 @media (min-width: 768px) {
     body {
         width: 90%;
+        max-width: 1600px;
         padding: 0 2% 30px 2%;
     }
 
