@@ -7,7 +7,7 @@ function SaveAsPdf() {
     const params = {
         key: api_key,
         url: url,
-        web_page_width: 1200,
+        web_page_width: 1250,
         page_numbers: false
     }
 
