@@ -10,6 +10,11 @@ body > * {
     box-sizing: border-box;
 }
 
+*::selection {
+    color: white;
+    background: darkgrey;
+}
+
 h2 {
     border-bottom: 3px solid lightgray;
     font-family: Arial, monospace;
