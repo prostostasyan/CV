@@ -1,6 +1,6 @@
 function SaveAsPdf() {
     const api_endpoint = "https://selectpdf.com/api2/convert/";
-    const api_key = "33548f4c-22bf-4299-8f5d-a6b9f4f6e4f6";
+    const api_key = "aa76d9be-2220-4c11-b480-1b5d6fe23698";
 
     const url = window.location.href; // current page
 
