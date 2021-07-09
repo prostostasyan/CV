@@ -13,6 +13,7 @@ body > * {
 h2 {
     border-bottom: 3px solid lightgray;
     font-family: Arial, monospace;
+    font-size: 18px;
 }
 
 p{
@@ -104,13 +105,11 @@ header .download div {
 aside {
     font-family: sans-serif monospace;
     width: 100%;
-    font-size: 16px;
 }
 
 main {
     font-family: sans-serif monospace;
     width: 100%;
-    font-size: 16px;
 }
 
 
@@ -134,7 +133,6 @@ main {
 }
 
 .contactItem div {
-    font-size: 16px;
 
 }
 
@@ -160,7 +158,6 @@ h3 {
 }
 
 .proSkillsBlock div {
-    font-size: 16px
 }
 
 data {
@@ -212,16 +209,15 @@ footer {
     }
 
     aside {
-
         font-family: monospace;
         width: 47%;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     main {
         font-family: monospace;
         width: 47%;
-        font-size: 16px;
+        font-size: 14px;
     }
 
 }
