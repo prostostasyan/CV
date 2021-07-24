@@ -1,6 +1,6 @@
 function SaveAsPdf() {
     const api_endpoint = "https://selectpdf.com/api2/convert/";
-    const api_key = "aa76d9be-2220-4c11-b480-1b5d6fe23698";
+    const api_key = "14b2384b-a936-4b2c-980c-cd8b27ac9d38";
 
     const url = window.location.href; // current page
 
@@ -19,7 +19,7 @@ function SaveAsPdf() {
     xhr.onload = function () {
         if (this.status === 200) {
             //console.log('Conversion to PDF completed ok.');
-            const blob = new Blob([this.response], { type: 'application/pdf' });
+            const blob = new Blob([this.response], {type: 'application/pdf'});
             const url = window.URL || window.webkitURL;
             const fileURL = url.createObjectURL(blob);
             //window.location.href = fileURL;
@@ -31,8 +31,7 @@ function SaveAsPdf() {
             if (navigator.appVersion.toString().indexOf('.NET') > 0) {
                 // This is for IE browsers, as the alternative does not work
                 window.navigator.msSaveBlob(blob, fileName);
-            }
-            else {
+            } else {
                 // This is for Chrome, Firefox, etc.
                 const a = document.createElement("a");
                 document.body.appendChild(a);
@@ -41,8 +40,7 @@ function SaveAsPdf() {
                 a.download = fileName;
                 a.click();
             }
-        }
-        else {
+        } else {
             //console.log("An error occurred during conversion to PDF: " + this.status);
             alert("An error occurred during conversion to PDF.\nStatus code: " + this.status + ", Error: " + String.fromCharCode.apply(null, new Uint8Array(this.response)));
         }
